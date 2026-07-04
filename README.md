@@ -4,19 +4,19 @@ SpaceEscapeRunner is a simple mobile arcade game built with Expo and React Nativ
 
 ## How to run
 
-1. Clone the repository
+1. Clone the repository:
+```bash
+   git clone https://github.com/sanjay-n-01/space-escape-runner.git
+   cd space-escape-runner
+```
 2. Install dependencies:
-
-   ```bash
+```bash
    npm install
-   ```
-
+```
 3. Start the app:
-
-   ```bash
+```bash
    npx expo start
-   ```
-
+```
 4. Open the Expo Go app on your phone and scan the QR code, or run it on an Android emulator.
 
 ## Features
@@ -35,25 +35,16 @@ SpaceEscapeRunner is a simple mobile arcade game built with Expo and React Nativ
 
 ## Install APK
 
-1. Build the Android APK using EAS or Expo:
-
-   ```bash
+1. Build the Android APK using EAS:
+```bash
    eas build -p android --profile preview
-   ```
-
-   If you are using classic Expo build instead of EAS, run:
-
-   ```bash
-   expo build:android
-   ```
-
-2. Download the generated APK from the Expo build page or the EAS build dashboard.
+```
+2. Download the generated APK from the EAS build dashboard.
 3. Transfer the APK to your Android device, or open the download link on the device.
 4. Allow installation from unknown sources if prompted.
 5. Install the APK and open the game.
 
 > Note: This install flow is for Android only. iOS apps must be installed through TestFlight or the App Store.
 
-You can also install the current build directly using this link:
-
+A prebuilt APK is available here, but Expo build links expire after a limited time (typically ~30 days). If this link no longer works, use the `eas build` command above to generate a fresh one:
 https://expo.dev/accounts/sanjay01n/projects/SpaceEscapeRunner/builds/6da93efc-4ab6-4bc4-9579-97907de1b5d5
