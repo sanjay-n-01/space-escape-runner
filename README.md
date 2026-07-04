@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# SpaceEscapeRunner
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SpaceEscapeRunner is a simple mobile arcade game built with Expo and React Native where the player dodges falling asteroids, survives as long as possible, and tries to beat their high score.
 
-## Get started
+## How to run
 
-1. Install dependencies
+1. Clone the repository
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app:
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Open the Expo Go app on your phone and scan the QR code, or run it on an Android emulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Fast-moving asteroid gameplay
+- Left and right ship movement
+- Score tracking
+- High score saved locally using AsyncStorage
+- Game over and replay flow
 
-## Get a fresh project
+## Tech stack
 
-When you're ready, run:
+- Expo
+- React Native
+- TypeScript
 
-```bash
-npm run reset-project
-```
+## Install APK
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Build the Android APK using EAS or Expo:
 
-## Learn more
+   ```bash
+   eas build -p android --profile preview
+   ```
 
-To learn more about developing your project with Expo, look at the following resources:
+   If you are using classic Expo build instead of EAS, run:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+   ```bash
+   expo build:android
+   ```
 
-## Join the community
+2. Download the generated APK from the Expo build page or the EAS build dashboard.
+3. Transfer the APK to your Android device, or open the download link on the device.
+4. Allow installation from unknown sources if prompted.
+5. Install the APK and open the game.
 
-Join our community of developers creating universal apps.
+> Note: This install flow is for Android only. iOS apps must be installed through TestFlight or the App Store.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+You can also install the current build directly using this link:
+
+https://expo.dev/accounts/sanjay01n/projects/SpaceEscapeRunner/builds/6da93efc-4ab6-4bc4-9579-97907de1b5d5
